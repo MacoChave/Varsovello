@@ -1,0 +1,49 @@
+/*
+ * DISEÑO SECTION MOVIL
+ */
+#descripcion {
+	background-image: url("../Recursos/pic05.jpg");
+	h1 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+		padding-bottom: 1em;
+	}
+}
+
+/*
+ * DISEÑO SECTION ESCRITORIO
+ */
+@media screen and (min-width: 720px) {
+	#descripcion {
+		display: flex;
+		padding: 1em;
+		h1 {
+			flex: 0 0 60%;
+			align-self: center;
+		}
+	}
+	#porque {
+		display: flex;
+		flex-wrap: wrap;
+		h1 {
+			flex-basis: 100%;
+		}
+		div {
+			flex: 1 1 40%;
+			margin: 1em;
+		}
+	}
+	#servicios {
+		display: flex;
+		flex-wrap: wrap;
+		h1 {
+			flex-basis: 100%
+		}
+		div {
+			flex: 1 1 20%;
+			margin: 1em;
+		}
+	}
+}

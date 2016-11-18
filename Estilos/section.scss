@@ -19,9 +19,17 @@
 	#descripcion {
 		display: flex;
 		padding: 1em;
-		h1 {
+		.eslogan {
 			flex: 0 0 60%;
 			align-self: center;
+			.logotipo {
+				display: flex;
+				margin: auto;
+				background-image: url("../Recursos/Logo.png");
+				background-size: 15em 10em;
+				width: 15em;
+				height: 10em;
+			}
 		}
 	}
 	#porque {

@@ -58,16 +58,15 @@ $blanco: #ffffff;
 @media screen and (min-width: 720px) {
     .main-header {
         display: flex;
-        //position: fixed;
         margin: 0 1em;
-        min-height: 3em;
+        min-height: 4em;
         .logo {
             display: block;
             position: fixed;
-            width: 7em;
-            height: 4em;
+            width: 10em;
+            height: 6em;
             background-image: url("../Recursos/Logo.png");
-            background-size: 7em 4em;
+            background-size: 10em 6em;
             z-index: 10;
         }
         .menu-container {
@@ -76,11 +75,12 @@ $blanco: #ffffff;
                 background: rgba($blanco, .25);
                 display: flex;
                 justify-content: flex-end;
+                padding-right: 2em;
                 .item {
                     border-bottom: 2px solid $azul;
                     .link {
                         padding: 0 1em;
-                        min-height: 2.5em;
+                        min-height: 3em;
                         color: $negro;
                         text-shadow: 1px 1px 5px $blanco;
                     }

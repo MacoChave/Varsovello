@@ -1,12 +1,19 @@
+/*
+ * DISEÑO MÓVIL
+ */
 .main-footer {
 	background: #1d1d1d;
-	padding: 2em;
+	padding: 2rem;
 	color: #ffffff;
 	font-size: .7em;
-	display: flex;
-	.copy {
-		margin-left: auto;
-		margin-right: auto;
-		align-self: center;
+	.copyright {
+		margin: 1rem auto;
 	}
+
+	/*
+	 * DISEÑO ESCRITORIO
+	 */
+	 @media screen and (min-width: 720px) {
+	 	display: flex;
+	 }
 }

@@ -7,7 +7,9 @@
 }
 
 body {
-	background-image: url("../Recursos/bg.png");
+	background:
+		url("../Recursos/bg.png"),
+		rgba(#1d1d1d, .1);
 }
 
 @import "menu.scss";

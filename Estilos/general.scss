@@ -1,20 +1,23 @@
+$margen: .8em;
+$texto: .5em;
 /*
  * DISEÑO SECTION MOVIL
  */
 .main-section {
-	margin: 1em;
+	margin: $margen / 2;
 	h1, h2 {
-		padding-top: 1em;
-		padding-bottom: 1em;
+
 	}
 	h2 {
 		text-align: center;
 	}
 	.mision, .vision, .objetivo, .servicio {
-		padding: 1em;
-		margin-bottom: 1.5em;
+		//padding: $margen;
+		//margin-bottom: $margen;
+		margin: $margen;
 		background: #ffffff;
 		box-shadow: 1px 1px 5px -3px #1d1d1d;
 		border-radius: 2px;
 	}
 }
+ 

@@ -1,65 +1,205 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300i,400,700");
-* { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
 
-body { background-image: url("../Recursos/bg.png"); }
+body {
+  background: url("../Recursos/bg.png"), rgba(29, 29, 29, 0.1);
+}
 
-/* DISEÑO MENU MÓVIL */
-.main-header { min-height: 2em; }
+/*
+ * DISEÑO MENU MÓVIL
+ */
+.main-header {
+  min-height: 2em;
+}
 
-.logo { display: none; }
+.logo {
+  display: none;
+}
 
-#toggle-menu { padding-left: 1em; background: rgba(29, 29, 29, 0.75); color: #ffffff; cursor: pointer; }
+#toggle-menu {
+  padding-left: 1em;
+  background: rgba(29, 29, 29, 0.75);
+  color: #ffffff;
+  cursor: pointer;
+}
 
-.menu-container { position: fixed; width: 100%; left: 0; top: 0; background: rgba(70, 130, 180, 0.75); }
+.menu-container {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(70, 130, 180, 0.75);
+}
 
-.menu { list-style: none; padding: 0; margin: 0; line-height: 2; }
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+}
 
-.menu .item { border-bottom: 1px solid rgba(29, 29, 29, 0.25); }
+.menu .item {
+  border-bottom: 1px solid rgba(29, 29, 29, 0.25);
+}
 
-.menu:last-child { border-bottom: none; }
+.menu:last-child {
+  border-bottom: none;
+}
 
-.menu .link { padding-left: 1em; display: block; color: #ffffff; text-decoration: none; max-height: 0; overflow: hidden; transition: all 0.5s; }
+.menu .link {
+  padding-left: 1em;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
 
-.menu .link:hover { background: rgba(255, 255, 255, 0.25); }
+.menu .link:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
 
-.mostrar .link { max-height: 2em; }
+.mostrar .link {
+  max-height: 2em;
+}
 
-/* DISEÑO MENU ESCRITORIO */
-@media screen and (min-width: 720px) { .main-header { display: flex; margin: 0 1em; min-height: 4em; }
-  .main-header .logo { display: block; position: fixed; width: 10em; height: 6em; background-image: url("../Recursos/Logo.png"); background-size: 10em 6em; z-index: 10; }
-  .main-header .menu-container #toggle-menu { display: none; }
-  .main-header .menu-container .menu { background: rgba(255, 255, 255, 0.25); display: flex; justify-content: flex-end; padding-right: 2em; }
-  .main-header .menu-container .menu .item { border-bottom: 2px solid steelblue; }
-  .main-header .menu-container .menu .item .link { padding: 0 1em; min-height: 3em; color: #1d1d1d; text-shadow: 1px 1px 5px #ffffff; } }
+/*
+ * DISEÑO MENU ESCRITORIO
+ */
+@media screen and (min-width: 720px) {
+  .main-header {
+    display: flex;
+    margin: 0 1em;
+    min-height: 4em;
+  }
+  .main-header .logo {
+    display: block;
+    position: fixed;
+    width: 10em;
+    height: 6em;
+    background-image: url("../Recursos/Logo.png");
+    background-size: 10em 6em;
+    z-index: 10;
+  }
+  .main-header .menu-container #toggle-menu {
+    display: none;
+  }
+  .main-header .menu-container .menu {
+    background: rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2em;
+  }
+  .main-header .menu-container .menu .item {
+    border-bottom: 2px solid steelblue;
+  }
+  .main-header .menu-container .menu .item .link {
+    padding: 0 1em;
+    min-height: 3em;
+    color: #1d1d1d;
+    text-shadow: 1px 1px 5px #ffffff;
+  }
+}
 
-/* DISEÑO SECTION MOVIL */
-.main-section { margin: 1em; }
+/*
+ * DISEÑO SECTION MOVIL
+ */
+.main-section {
+  margin: 0.4em;
+}
 
-.main-section h1, .main-section h2 { padding-top: 1em; padding-bottom: 1em; }
+.main-section h2 {
+  text-align: center;
+}
 
-.main-section h2 { text-align: center; }
+.main-section .mision, .main-section .vision, .main-section .objetivo, .main-section .servicio {
+  margin: 0.8em;
+  background: #ffffff;
+  box-shadow: 1px 1px 5px -3px #1d1d1d;
+  border-radius: 2px;
+}
 
-.main-section .mision, .main-section .vision, .main-section .objetivo, .main-section .servicio { padding: 1em; margin-bottom: 1.5em; background: #ffffff; box-shadow: 1px 1px 5px -3px #1d1d1d; border-radius: 2px; }
+/*
+ * DISEÑO SECTION MOVIL
+ */
+#descripcion h1 {
+  text-align: center;
+}
 
-/* DISEÑO SECTION MOVIL */
-#descripcion { background-image: url("../Recursos/pic05.jpg"); }
+#descripcion p {
+  text-align: center;
+  padding-bottom: 1em;
+}
 
-#descripcion h1 { text-align: center; }
+/*
+ * DISEÑO SECTION ESCRITORIO
+ */
+@media screen and (min-width: 720px) {
+  #descripcion {
+    display: flex;
+    padding: 1em;
+  }
+  #descripcion .eslogan {
+    flex: 0 0 60%;
+    align-self: center;
+  }
+  #descripcion .eslogan .logotipo {
+    display: flex;
+    margin: auto;
+    background-image: url("../Recursos/Logo.png");
+    background-size: 15em 10em;
+    width: 15em;
+    height: 10em;
+  }
+  #porque {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #porque h1 {
+    flex-basis: 100%;
+  }
+  #porque div {
+    flex: 1 1 40%;
+    margin: 1em;
+  }
+  #servicios {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #servicios h1 {
+    flex-basis: 100%;
+  }
+  #servicios div {
+    flex: 1 1 20%;
+    margin: 1em;
+  }
+}
 
-#descripcion p { text-align: center; padding-bottom: 1em; }
+/*
+ * DISEÑO MÓVIL
+ */
+.main-footer {
+  background: #1d1d1d;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: .7em;
+  /*
+	 * DISEÑO ESCRITORIO
+	 */
+}
 
-/* DISEÑO SECTION ESCRITORIO */
-@media screen and (min-width: 720px) { #descripcion { display: flex; padding: 1em; }
-  #descripcion .eslogan { flex: 0 0 60%; align-self: center; }
-  #descripcion .eslogan .logotipo { display: flex; margin: auto; background-image: url("../Recursos/Logo.png"); background-size: 15em 10em; width: 15em; height: 10em; }
-  #porque { display: flex; flex-wrap: wrap; }
-  #porque h1 { flex-basis: 100%; }
-  #porque div { flex: 1 1 40%; margin: 1em; }
-  #servicios { display: flex; flex-wrap: wrap; }
-  #servicios h1 { flex-basis: 100%; }
-  #servicios div { flex: 1 1 20%; margin: 1em; } }
+.main-footer .copyright {
+  margin: 1rem auto;
+}
 
-.main-footer { background: #1d1d1d; padding: 2em; color: #ffffff; font-size: .7em; display: flex; }
-
-.main-footer .copy { margin-left: auto; margin-right: auto; align-self: center; }
+@media screen and (min-width: 720px) {
+  .main-footer {
+    display: flex;
+  }
+}

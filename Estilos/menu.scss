@@ -1,6 +1,5 @@
-$azul: steelblue;
-$negro: #1d1d1d;
-$blanco: #ffffff;
+@import "colores.scss";
+@import "dimensiones.scss";
 
 /*
  * DISEÑO MENU MÓVIL
@@ -13,24 +12,25 @@ $blanco: #ffffff;
 
 #toggle-menu{
     padding-left: 1em;
-    background: rgba($negro, .75);
-    color: $blanco;
+    background: $fondo-toggle;
+    color: $texto-m;
     cursor: pointer;
+    line-height: 2;
 }
 .menu-container{
     position: fixed;
     width: 100%;
     left: 0;
     top: 0;
-    background: rgba($azul, .75);
+    background: $fondo-m;
 }
 .menu{
     list-style: none;
     padding: 0;
     margin: 0;
-    line-height: 2;
+    line-height: 3;
     .item{
-        border-bottom: 1px solid rgba($negro, .25);
+        border-bottom: 1px solid $bb-m;
     }
     &:last-child{
         border-bottom: none;
@@ -38,24 +38,24 @@ $blanco: #ffffff;
     .link{
         padding-left: 1em;
         display: block;
-        color: $blanco;
+        color: $texto-m;
         text-decoration: none;
         max-height: 0;
         overflow: hidden;
         transition: all 0.5s;
         &:hover{
-            background: rgba($blanco, .25);
+            background: $hover-m;
         }
     }
 }
 .mostrar .link{
-    max-height: 2em;
+    max-height: 2.5em;
 }
 
 /*
  * DISEÑO MENU ESCRITORIO
  */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: $movil) {
     .main-header {
         display: flex;
         margin: 0 1em;
@@ -77,12 +77,12 @@ $blanco: #ffffff;
                 justify-content: flex-end;
                 padding-right: 2em;
                 .item {
-                    border-bottom: 2px solid $azul;
+                    border-bottom: 2px solid $bb-e;
                     .link {
                         padding: 0 1em;
                         min-height: 3em;
-                        color: $negro;
-                        text-shadow: 1px 1px 5px $blanco;
+                        color: $texto-e;
+                        text-shadow: 1px 1px 5px $tsh-e;
                     }
                 }
             }

@@ -1,21 +1,21 @@
+@import "dimensiones.scss";
+@import "colores.scss";
 /*
  * DISEÑO SECTION MOVIL
  */
-#descripcion {
-	h1 {
-		text-align: center;
-	}
+.main-section {
 	p {
 		text-align: center;
-		padding-bottom: 1em;
+		text-shadow: 2px 2px 10px $blanco;
+		font-size: 1.4em;
 	}
 }
 
 /*
  * DISEÑO SECTION ESCRITORIO
  */
-@media screen and (min-width: 720px) {
-	#descripcion {
+@media screen and (min-width: $movil) {
+	.main-section {
 		display: flex;
 		padding: 1em;
 		.eslogan {
@@ -31,7 +31,7 @@
 			}
 		}
 	}
-	#porque {
+	.porque-section {
 		display: flex;
 		flex-wrap: wrap;
 		h1 {
@@ -42,7 +42,7 @@
 			margin: 1em;
 		}
 	}
-	#servicios {
+	.servicios-section {
 		display: flex;
 		flex-wrap: wrap;
 		h1 {
@@ -51,6 +51,14 @@
 		div {
 			flex: 1 1 20%;
 			margin: 1em;
+		}
+	}
+
+	.porque-section, .servicio-section {
+		h1 {
+			margin: 0;
+			padding: 0;
+			line-height: 3;
 		}
 	}
 }

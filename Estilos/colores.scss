@@ -1,0 +1,23 @@
+/*
+ * MI PALETA
+*/
+$negro: #1d1d1d;
+$blanco: #ffffff;
+$azul: steelblue;
+
+/*
+ * PALETA PARA MENU MOVIL
+*/
+$fondo-toggle: rgba($negro, .75);
+$fondo-m: rgba($azul, .75);
+$bb-m: rgba($negro, .25);
+$hover-m: rgba($blanco, .25);
+$texto-m: $blanco;
+
+/*
+ * PALETA PARA MENU ESCRITORIO
+*/
+$fondo-e: rgba($blanco, .25);
+$bb-e: $azul;
+$texto-e: $negro;
+$tsh-e: $blanco;

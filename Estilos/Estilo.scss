@@ -9,7 +9,8 @@
 body {
 	background:
 		url("../Recursos/bg.png"),
-		rgba(#1d1d1d, .1);
+		url("../Recursos/background-empresa.jpg") top center / 100% fixed no-repeat,
+		rgba(#1d1d1d, .3);
 }
 
 @import "menu.scss";

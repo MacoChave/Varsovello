@@ -7,9 +7,27 @@
 }
 
 body {
-  background: url("../Recursos/bg.png"), rgba(29, 29, 29, 0.1);
+  background: url("../Recursos/bg.png"), url("../Recursos/background-empresa.jpg") top center/100% fixed no-repeat, rgba(29, 29, 29, 0.3);
 }
 
+/*
+ * MI PALETA
+*/
+/*
+ * PALETA PARA MENU MOVIL
+*/
+/*
+ * PALETA PARA MENU ESCRITORIO
+*/
+/*
+ * PANTALLA
+*/
+/*
+ * MARGEN
+*/
+/*
+ * TEXTO
+*/
 /*
  * DISEÑO MENU MÓVIL
  */
@@ -26,6 +44,7 @@ body {
   background: rgba(29, 29, 29, 0.75);
   color: #ffffff;
   cursor: pointer;
+  line-height: 2;
 }
 
 .menu-container {
@@ -40,7 +59,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  line-height: 2;
+  line-height: 3;
 }
 
 .menu .item {
@@ -66,7 +85,7 @@ body {
 }
 
 .mostrar .link {
-  max-height: 2em;
+  max-height: 2.5em;
 }
 
 /*
@@ -108,48 +127,74 @@ body {
 }
 
 /*
- * DISEÑO SECTION MOVIL
- */
-.main-section {
-  margin: 0.4em;
-}
-
-.main-section h2 {
-  text-align: center;
-}
-
-.main-section .mision, .main-section .vision, .main-section .objetivo, .main-section .servicio {
-  margin: 0.8em;
-  background: #ffffff;
-  box-shadow: 1px 1px 5px -3px #1d1d1d;
-  border-radius: 2px;
-}
-
+ * MI PALETA
+*/
+/*
+ * PALETA PARA MENU MOVIL
+*/
+/*
+ * PALETA PARA MENU ESCRITORIO
+*/
 /*
  * DISEÑO SECTION MOVIL
  */
-#descripcion h1 {
+.main-section h1, .porque-section h1, .servicios-section h1 {
+  margin: 1.5rem 1.5rem;
   text-align: center;
 }
 
-#descripcion p {
+.main-section .mision, .main-section .vision, .main-section .objetivo, .main-section .servicio, .porque-section .mision, .porque-section .vision, .porque-section .objetivo, .porque-section .servicio, .servicios-section .mision, .servicios-section .vision, .servicios-section .objetivo, .servicios-section .servicio {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 5px -1px #1d1d1d;
+  border-radius: 3px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.main-section .mision h2, .main-section .vision h2, .main-section .objetivo h2, .main-section .servicio h2, .porque-section .mision h2, .porque-section .vision h2, .porque-section .objetivo h2, .porque-section .servicio h2, .servicios-section .mision h2, .servicios-section .vision h2, .servicios-section .objetivo h2, .servicios-section .servicio h2 {
+  margin: 1rem auto;
+}
+
+/*
+ * PANTALLA
+*/
+/*
+ * MARGEN
+*/
+/*
+ * TEXTO
+*/
+/*
+ * MI PALETA
+*/
+/*
+ * PALETA PARA MENU MOVIL
+*/
+/*
+ * PALETA PARA MENU ESCRITORIO
+*/
+/*
+ * DISEÑO SECTION MOVIL
+ */
+.main-section p {
   text-align: center;
-  padding-bottom: 1em;
+  text-shadow: 2px 2px 10px #ffffff;
+  font-size: 1.4em;
 }
 
 /*
  * DISEÑO SECTION ESCRITORIO
  */
 @media screen and (min-width: 720px) {
-  #descripcion {
+  .main-section {
     display: flex;
     padding: 1em;
   }
-  #descripcion .eslogan {
+  .main-section .eslogan {
     flex: 0 0 60%;
     align-self: center;
   }
-  #descripcion .eslogan .logotipo {
+  .main-section .eslogan .logotipo {
     display: flex;
     margin: auto;
     background-image: url("../Recursos/Logo.png");
@@ -157,30 +202,44 @@ body {
     width: 15em;
     height: 10em;
   }
-  #porque {
+  .porque-section {
     display: flex;
     flex-wrap: wrap;
   }
-  #porque h1 {
+  .porque-section h1 {
     flex-basis: 100%;
   }
-  #porque div {
+  .porque-section div {
     flex: 1 1 40%;
     margin: 1em;
   }
-  #servicios {
+  .servicios-section {
     display: flex;
     flex-wrap: wrap;
   }
-  #servicios h1 {
+  .servicios-section h1 {
     flex-basis: 100%;
   }
-  #servicios div {
+  .servicios-section div {
     flex: 1 1 20%;
     margin: 1em;
   }
+  .porque-section h1, .servicio-section h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+  }
 }
 
+/*
+ * PANTALLA
+*/
+/*
+ * MARGEN
+*/
+/*
+ * TEXTO
+*/
 /*
  * DISEÑO MÓVIL
  */

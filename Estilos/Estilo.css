@@ -241,6 +241,15 @@ body {
  * TEXTO
 */
 /*
+ * MI PALETA
+*/
+/*
+ * PALETA PARA MENU MOVIL
+*/
+/*
+ * PALETA PARA MENU ESCRITORIO
+*/
+/*
  * DISEÑO MÓVIL
  */
 .main-footer {
@@ -255,6 +264,15 @@ body {
 
 .main-footer .copyright {
   margin: 1rem auto;
+}
+
+.main-footer .copyright .icon-github a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-footer .copyright .icon-github a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 720px) {
